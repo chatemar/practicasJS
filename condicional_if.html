@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	let edad=20;
+	console.log("edad " + edad + " condición: edad >= 18");
+	if (edad >= 18) {
+		console.log("Mayor de edad");
+		console.log("Ya eres un adulto");
+	}
+	else {
+		console.log("Menor de edad");
+		console.log("eres un niño");
+	}
+
+
+
+	let precio=200;
+	console.log("precio " + precio + " precio > 100 resta 10");
+	if (precio>100) {
+		console.log("El total a pagar es " + (precio -10))
+	}
+	
+	let num1=0;
+	let a=10;
+	let b=10;
+
+	console.log("num1=" + num1 + " condición num1==0");
+	if (num1==0){ //devuelve true
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+
+	console.log("condición num1");
+	if (num1){ //devuelve false
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+
+	console.log(a+ " "+ b + " a-b");
+	if (a-b){ //devuelve false
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+
+	console.log(a+ " "+ b + " a-b==0");
+	if (a-b==0){ //devuelve true
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+
+/*
+if (a-b==0){ //devuelve true
+	<!-- 	
+	alert ("true"); 	
+	//-->
+} else {
+	<!-- 	
+	alert ("false"); 	
+	//-->
+}
+*/
+
+/*Esto es un comentario
+de más de una línea*/
+	let num2=10;
+	console.log(num1+ " "+ num2 + " num1-num2");
+	if (num1-num2){ //devuelve true porque da número negativo
+		console.log("true");
+	} else {
+	console.log("false");
+	}
+
+/* valores que dan false
+false
+cero
+vacío como en un array [][]
+null  
+""
+undefined como cuando no inicializo o declaro una variable
+*/
+
+	let x=true;
+	let y=false;
+
+	console.log(x+ " "+ y + " x&y");
+	if (x&y){ //devuelve false 
+	console.log("true");
+	} else {
+	console.log("false");
+	}
+	console.log(x+ " "+ y + " x|y");
+	if (x|y){ //devuelve true 
+	console.log("true");
+	} else {
+	console.log("false");
+	}
+
+	let nombres="Betty";
+	console.log("nombres=Betty condición nombres");
+	if (nombres){ //devuelve true 
+	console.log("true");
+	} else {
+	console.log("false");
+	}
+
+	let nombres2="";
+	console.log("nombres2=comillas" + " es conjunto vacío condicion nombres");
+	if (nombres2){ //devuelve false 
+	console.log("true");
+	} else {
+	console.log("false");
+	}
+
+	let nombres3;
+	console.log("nombres3" + " es undefined");
+	if (nombres3){ //devuelve false 
+	console.log("true");
+	} else {
+	console.log("false");
+	}
+
+	let monto=50;
+	let totalPagar=monto>=100?monto-10:monto;
+	console.log("monto " + monto + " total a pagar " + totalPagar);
+
+	let color="yellow";
+	if (color=="red") {
+		console.log("rojo");
+	} else if (color=="green"){
+		console.log("verde");
+	} else if (color=="pink"){
+		console.log ("rosa");
+	} else if (color=="blue"){
+		console.log("azul");
+	} else {
+		console.log ("no existe ese color en la lista");
+	}
+
+
+	let usuario="betty";
+	let contrasena="1234";
+
+	if (usuario== "betty")
+	{
+		if (contrasena == 1234)
+		{
+			console.log("permitir acceso");
+		}
+		else
+		{
+			console.log("contraeña incorrecta");
+		}
+	}
+	else
+	{
+		console.log ("El usuario no existe");
+	}
+
+
+	if (usuario=="betty" & contrasena == "1234")
+	{
+		console.log ("acceso concedido");
+	}
+	else
+	{
+		console.log("usuario o contraseña no existe");
+	}
+</script>
+</body>
+</html>
